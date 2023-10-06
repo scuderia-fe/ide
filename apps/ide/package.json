@@ -4,11 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "check": "svelte-check --tsconfig ./tsconfig.json",
-    "tauri": "tauri"
+    "dev:svelte": "vite",
+    "build:svelte": "vite build",
+    "preview:svelte": "vite preview",
+    "check:svelte": "svelte-check --tsconfig ./tsconfig.json",
+    "build": "tauri build",
+    "dev": "tauri dev"
   },
   "dependencies": {
     "@tauri-apps/api": "^1.5.0"
