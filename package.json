@@ -1,6 +1,8 @@
 {
+  "name": "@scuderia-fe/ide-repo",
   "private": true,
   "scripts": {
+    "start": "turbo run start",
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
@@ -12,10 +14,17 @@
     "tsconfig": "*",
     "turbo": "latest"
   },
-  "name": "scuderia-fe",
   "packageManager": "bun@1.0.4",
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "engines": {
+    "node": "18",
+    "bun": "1.0.4"
+  },
+  "volta": {
+    "node": "18.18.0",
+    "bun": "1.0.4"
+  }
 }
