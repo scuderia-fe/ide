@@ -14,7 +14,6 @@
     "eslint": "^8.48.0",
     "husky": "^8.0.3",
     "prettier": "^3.0.3",
-    "tsconfig": "*",
     "turbo": "latest"
   },
   "packageManager": "bun@1.0.4",
