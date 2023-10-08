@@ -1,5 +1,6 @@
 [workspace]
-members = ["apps/ide/src-tauri", "packages/*"]
+# Add all Cargo packages as members of this workspace
+members = ["apps/ide/src-tauri"]
 default-members = ["apps/ide/src-tauri"]
 resolver = "2"
 
