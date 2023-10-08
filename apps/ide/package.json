@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "prepare": "svelte-kit sync",
     "dev:svelte": "vite dev",
     "build:svelte": "vite build",
     "preview:svelte": "vite preview",
@@ -23,6 +24,8 @@
     "tslib": "^2.4.1",
     "typescript": "^5.2.2",
     "tsconfig": "workspace:*",
+    "prettier-custom-config": "workspace:*",
+    "prettier-plugin-svelte": "^3.0.3",
     "vite": "^4.4.2"
   },
   "type": "module"

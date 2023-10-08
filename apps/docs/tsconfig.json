@@ -1,3 +1,7 @@
 {
-  "extends": "tsconfig/base.json"
+  "extends": "astro/tsconfigs/strictest",
+  "compilerOptions": {
+    "allowJs": false,
+    "checkJs": false
+  }
 }

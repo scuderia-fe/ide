@@ -26,3 +26,33 @@ IDE is a project made for learning
 
 - Made with [Tauri](https://tauri.app)
 - Frontend with [sveltekit](https://kit.svelte.dev/)
+
+### Troubleshooting
+
+Adding a shared package into the `packages` folder after the first run of a `bun install` **_could_** cause troubles while installing the dependencies again.
+
+An error similar to the following could appear: `workspace dependency "{package name}" not found`
+
+When this appears, make sure you have correctly referenced the package name in every `apps/**/package.json` that needs it.
+
+If that's the case, then the only workaround to that is to remove `bun.lockb` file, remove the global cache and then install dependencies again.
+
+Remove Bun lockfile:
+
+```Shell
+    rm -f bun.lockb
+```
+
+Clear Bun's global cache:
+
+```Shell
+    bun pm cache rm
+```
+
+Install dependencies again:
+
+```Shell
+    bun install
+```
+
+Contact one of the maintainers in case the issue persists.

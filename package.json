@@ -13,7 +13,7 @@
     "@commitlint/config-conventional": "^17.7.0",
     "eslint": "^8.48.0",
     "husky": "^8.0.3",
-    "prettier": "^3.0.3",
+    "prettier-custom-config": "workspace:*",
     "turbo": "latest"
   },
   "packageManager": "bun@1.0.4",

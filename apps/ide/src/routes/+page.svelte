@@ -1,11 +1,11 @@
 <script lang="ts">
-  import { invoke } from "@tauri-apps/api"
+  import { invoke } from "@tauri-apps/api";
   let name = "";
   let result = "";
 
   const handleSubmit = async () => {
     result = await invoke("greet", { name });
-  }
+  };
 </script>
 
 <h1>Welcome to SvelteKit</h1>

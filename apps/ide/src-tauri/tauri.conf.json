@@ -1,10 +1,10 @@
 {
   "$schema": "../../../node_modules/@tauri-apps/cli/schema.json",
   "build": {
-    "beforeBuildCommand": "bun run dev:build",
+    "beforeBuildCommand": "bun run build:svelte",
     "beforeDevCommand": "bun run dev:svelte",
     "devPath": "http://localhost:5173",
-    "distDir": "../public"
+    "distDir": "../build"
   },
   "package": {
     "productName": "ide",
@@ -29,7 +29,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "com.scuderia-fe.ide",
       "longDescription": "",
       "macOS": {
         "entitlements": null,

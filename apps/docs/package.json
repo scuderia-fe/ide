@@ -7,7 +7,8 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "format": "prettier -w --cache --plugin prettier-plugin-astro ."
   },
   "dependencies": {
     "@astrojs/starlight": "^0.11.0",
@@ -15,6 +16,8 @@
     "sharp": "^0.32.5"
   },
   "devDependencies": {
-    "tsconfig": "workspace:*"
+    "tsconfig": "workspace:*",
+    "prettier-custom-config": "workspace:*",
+    "prettier-plugin-astro": "^0.12.0"
   }
 }
