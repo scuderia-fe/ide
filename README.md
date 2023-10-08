@@ -39,20 +39,20 @@ If that's the case, then the only workaround to that is to remove `bun.lockb` fi
 
 Remove Bun lockfile:
 
-```Shell
-    rm -f bun.lockb
+```zsh
+rm -f bun.lockb
 ```
 
 Clear Bun's global cache:
 
-```Shell
-    bun pm cache rm
+```zsh
+bun pm cache rm
 ```
 
 Install dependencies again:
 
-```Shell
-    bun install
+```zsh
+bun install
 ```
 
 Contact one of the maintainers in case the issue persists.
